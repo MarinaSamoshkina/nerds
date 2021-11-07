@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Nerds</title>
+    <link rel="icon" href="favicon.ico" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-nav">
+        <a class="main-logo">
+          <img
+            src="img/nerds-logo.png"
+            width="160"
+            height="65"
+            alt="Логотип дизайнстудии «Nerds» Нёрдс"
+          />
+        </a>
+        <ul class="site-nav">
+          <li><a href="blank.html">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+          <li><a href="blank.html">Корзина</a></li>
+          <img
+            class="-header-cart-logo"
+            src="img/cart-icon.png"
+            width="15"
+            height="15"
+            alt="Иконка корзины"
+          />
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1 class="main-catalog-header">Магазин готовых шаблонов</h1>
+      </section>
+
+      <section class="left-filter">
+        <h2>Фильтр товаров (сайтов)</h2>
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend class="catalog-block-header">Стоимость:</legend>
+            <div class="price-slider">
+            <input
+              type="range"
+              name="priceSlider"
+              id="priceSlider"
+              min="0"
+              max="15000"
+              step="1"
+            />
+            </div>
+            <label>ОТ<input class="price-slider" type="text" name="priceOt" value="0" /></label>
+            <label>ДО<input class="price-slider" type="text" name="priceDo" value="15000" /></label>
+          </fieldset>
+          <fieldset>
+            <legend class="catalog-block-header">Сетка:</legend>
+            <ul class="list-net-type">
+              <li>
+                <input
+                  type="radio"
+                  name="net-type"
+                  value="adaptivnaya"
+                  id="filter-adaptivnaya"
+                  checked
+                />
+                <label for="filter-adaptivnaya">Адаптивная</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="net-type"
+                  value="fiksed"
+                  id="filter-fiksed"
+                />
+                <label for="filter-fiksed">Фиксированная</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="net-type"
+                  value="rezin"
+                  id="filter-rezin"
+                />
+                <label for="filter-rezin">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="catalog-block-header">Особенности:</legend>
+            <ul class="list-features">
+              <li>
+                <input
+                  type="checkbox"
+                  name="slaider"
+                  id="filter-slaider"
+                  checked
+                />
+                <label for="filter-slaider">Слайдер</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="block-preim"
+                  id="filter-block-preim"
+                />
+                <label for="filter-block-preim">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="news" id="filter-news" checked />
+                <label for="filter-news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" name="gallery" id="filter-gallery" />
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" name="korzina" id="filter-korzina" />
+                <label for="filter-korzina">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="btn-show" type="submit">Показать</button>
+        </form>
+      </section>
+
+      <section>
+        <h2 class="catalog-block-header">Сортировать</h2>
+        <ul class="catalog-header-filter">
+          <li>По цене</li>
+          <li>По типу</li>
+          <li>По названию</li>
+        </ul>
+        <img
+          src="img/icon-down-dir.svg"
+          width="11"
+          height="10"
+          alt="Иконка выбора стрелка вниз"
+        />
+        <img
+          src="img/icon-up.svg"
+          width="11"
+          height="10"
+          alt="Иконка выбора стрелка вверх"
+        />
+      </section>
+
+      <section>
+        <h2>Список сайтов</h2>
+        <ul class="filter-cites">
+          <li>
+            <h3 class="filter-cites-header">Sedona</h3>
+            Информационный сайт <br />
+            для туристов <br />
+            <img
+              src="img/Maket-sedona.png"
+              width="358"
+              height="578"
+              alt="Пример сайта Седона"
+            />
+            <button type="button" class="btn-price">9 900 ₽</button>
+          </li>
+
+          <li>
+            <h3 class="filter-cites-header">Pink app</h3>
+            Продуктовый лендинг <br />
+            приложения для iOS и Android <br />
+            <img
+              src="img/Maket-Pink.png"
+              width="358"
+              height="578"
+              alt="Пример сайта Пинк Апп"
+            />
+            <button type="button" class="btn-price">9 900 ₽</button>
+          </li>
+
+          <li>
+            <h3 class="filter-cites-header">Barbershop</h3>
+            Сайт салона красоты. <br />
+            Для мужчин, да. <br />
+            <img
+              src="img/Maket-Barbershop.png"
+              width="358"
+              height="578"
+              alt="Пример сайта Barbershop"
+            />
+            <button type="button" class="btn-price">9 900 ₽</button>
+          </li>
+
+          <li>
+            <h3 class="filter-cites-header">MISHKA</h3>
+            Интернет-магазин <br />
+            вязаных игрушек <br />
+            <img
+              src="img/Maket-Mishka.png"
+              width="358"
+              height="578"
+              alt="Пример сайта MISHKA"
+            />
+            <button type="button" class="btn-price">9 900 ₽</button>
+          </li>
+
+          <li>
+            <h3 class="filter-cites-header">A Plus</h3>
+            Лендинг курсов повышения <br />
+            квалификации <br />
+            <img
+              src="img/Maket-HTML.png"
+              width="358"
+              height="578"
+              alt="Пример сайта HTML Academy"
+            />
+            <button type="button" class="btn-price">9 900 ₽</button>
+          </li>
+
+          <li>
+            <h3 class="filter-cites-header">Kvast</h3>
+            Промо-сайт производителя <br />
+            крафтового кваса <br />
+            <img
+              src="img/Maket-Kvast.png"
+              width="358"
+              height="578"
+              alt="Пример сайта Кваст"
+            />
+            <button type="button" class="btn-price">9 900 ₽</button>
+          </li>
+        </ul>
+
+        <ul class="btn-pages">
+          <li>
+            <a>1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">Следующая</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer-contacts">
+        <h2>Контакты</h2>
+        <p class="contacts-header">NЁRDS DESIGN STUDIO</p>
+        <p>
+          наб. Реки Карповки,<br />
+          5 лит П, Санкт-Петербург
+        </p>
+        <p>
+          <a class="footer-contacts-phone" href="tel:+78005558628"
+            >+7 800 555-86-28</a
+          >
+        </p>
+        <button class="btn-contacts" type="button">Напишите нам</button>
+      </section>
+      <section class="footer-map">
+        <h2>Карта</h2>
+        <img src="img/map 1.png" width="1440" height="416" alt="Карта" />
+        <img
+          src="img/map-marker 1.png"
+          width="231"
+          height="190"
+          alt="Указатель Нёрдс на карте"
+        />
+      </section>
+      <section class="footer-social">
+        <h2>Соцсети</h2>
+        <ul class="social-list">
+          <li>
+            <img
+              src="img/logo_htmlacademy 1.png"
+              width="26"
+              height="15"
+              alt="Логотип Вконтакте"
+            />
+            <a class="social-btn" href="#">Вконтакте</a>
+          </li>
+          <li>
+            <img
+              src="img/logo_htmlacademy 1.png"
+              width="12"
+              height="22"
+              alt="Логотип Фейсбук"
+            />
+            <a class="social-btn" href="#">Фейсбук</a>
+          </li>
+          <li>
+            <img
+              src="img/logo_htmlacademy 1.png"
+              width="21"
+              height="21"
+              alt="Логотип Инстаграм"
+            />
+            <a class="social-btn" href="#">Инстаграм</a>
+          </li>
+        </ul>
+        <p class="footer-social-header">Давайте дружить, это выгодно!</p>
+        <p class="footer-social-text">Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,298 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-darkgray: #283136;
+  --basic-lightgray: #666666;
+  --basic-gray: #444444;
+  --basic-green: #00ca74;
+  --basic-yellow: #efc849;
+  --top-background: #eeeeee;
+
+  --special: #fb565a;
+  --btn-coral-hover: #e74246;
+  --btn-coral-focus: #d7373b;
+  --btn-green-hover: #00bc6c;
+  --btn-green-focus: #00aa62;
+  --btn-yellow-hover: #eab534;
+  --btn-yellow-focus: #e5a722;
+}
+
+/* Global */
+
+.page-body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main nav */
+
+.main-header {
+  background-color: var(--top-background);
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.site-nav {
+  list-style: none;
+}
+
+.site-nav a {
+  color: var(--basic-black);
+}
+
+.site-nav a:hover {
+  color: var(--special);
+}
+
+.site-nav a:focus {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/* Slyder */
+
+.btn-slyder {
+  background-color: var(--special);
+  color: var(--basic-white);
+  text-transform: uppercase;
+}
+
+/* Servises */
+
+.servises-list {
+  list-style: none;
+}
+
+.servises-item {
+  text-align: left;
+}
+
+.servises-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.servises-item p {
+  color: var(--basic-darkgray);
+}
+
+.btn-sites,
+.btn-apps,
+.btn-presentations {
+  background-color: var(--special);
+  color: var(--basic-white);
+  text-transform: uppercase;
+}
+
+.btn-apps {
+  background-color: var(--basic-green);
+}
+
+.btn-presentations {
+  background-color: var(--basic-yellow);
+}
+
+/* Info about company */
+
+.about-company {
+  color: var(--basic-darkgray);
+}
+
+.company-slogan {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.stats-list {
+  list-style: none;
+}
+
+.stats-list-item {
+  color: var(--basic-darkgray);
+}
+
+.stats-list span {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--basic-black);
+}
+
+.company-ul-header {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Contacts */
+
+.footer-contacts {
+  line-height: 18px;
+  color: var(--basic-lightgray);
+}
+
+.contacts-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.footer-contacts-phone {
+  color: var(--basic-lightgray);
+}
+
+.btn-contacts {
+  background-color: var(--special);
+  color: var(--basic-white);
+  text-transform: uppercase;
+}
+
+btn-contacts:hover {
+  background-color: var(--btn-coral-hover);
+  color: var(--special);
+}
+
+.btn-contacts:focus {
+  background-color: var(--btn-coral-focus);
+}
+
+/* Social */
+
+.social-list {
+  list-style: none;
+}
+
+.footer-social-header {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.footer-social-text {
+  line-height: 24px;
+  color: var(--basic-gray);
+}
+
+/* Catalog */
+
+.main-catalog-header {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+
+  background-color: var(--top-background);
+}
+
+.price-slider {
+  background: var(--top-background);
+  text-align: center;
+}
+
+.list-net-type,
+.list-features,
+.catalog-header-filter {
+  list-style: none;
+}
+
+.catalog-block-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.catalog-header-filter {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.btn-show,
+.btn-pages {
+  background-color: var(--top-background);
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.left-filter li {
+  line-height: 20px;
+  color: var(--basic-darkgray);
+}
+
+/* Catalog body */
+
+.filter-cites {
+  text-align: center;
+  color: var(--basic-lightgray);
+  list-style: none;
+}
+
+.filter-cites-header {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.btn-price {
+  background-color: var(--special);
+  color: var(--basic-white);
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.btn-pages a {
+  color: var(--basic-black);
+}
+
+.btn-pages {
+  list-style: none;
+}
