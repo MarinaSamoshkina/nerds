@@ -1,7 +1,6 @@
-# Личный проект «{{projectTitle}}»
+# Личный проект «nerds»
 
-* Студент: [{{userName}}]({{userProfile}}).
-* Наставник: `Неизвестно`.
+* Студент: Marina Samoshkina.
 
 ---
 
